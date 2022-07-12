@@ -5,7 +5,7 @@ Need a file named "file" representing a disk image with one primary fat32 partit
 
 ![image](https://user-images.githubusercontent.com/17061996/178532228-cea01d02-24ca-40b8-9aae-7c467eaf07a1.png)
 
-Commands:
+## Commands
 ```bash
 # Mount file to partitionned loop:
 sudo losetup -P /dev/loop18 file
@@ -25,3 +25,8 @@ sudo mkfs.fat /dev/loop18p12 -n PART12
 sudo mkfs.fat /dev/loop18p13 -n PART13
 sudo mkfs.fat /dev/loop18p14 -n PART14
 ```
+
+## Links
+https://en.wikipedia.org/wiki/Master_boot_record
+
+https://en.wikipedia.org/wiki/Design_of_the_FAT_file_system
