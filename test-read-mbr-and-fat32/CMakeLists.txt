@@ -10,6 +10,7 @@ target_sources(disk_reader PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/mbr.cpp 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/fat.cpp 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/part.cpp 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/utf-convert.cpp 
 )
 
 target_include_directories(disk_reader PUBLIC
