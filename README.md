@@ -27,6 +27,11 @@ sudo mkfs.fat /dev/loop18p14 -n PART14
 ```
 
 ## Links
-https://en.wikipedia.org/wiki/Master_boot_record
-
-https://en.wikipedia.org/wiki/Design_of_the_FAT_file_system
+Ressources I used to read this pile of shit
+ - https://en.wikipedia.org/wiki/Master_boot_record
+ - https://en.wikipedia.org/wiki/Design_of_the_FAT_file_system
+ - https://www.cs.fsu.edu/~cop4610t/lectures/project3/Week11/Slides_week11.pdf
+ - https://www.cs.fsu.edu/~cop4610t/assignments/project3/spec/fatspec.pdf
+ - https://www.pjrc.com/tech/8051/ide/fat32.html
+ - https://cscie92.dce.harvard.edu/spring2021/slides/FAT32%20File%20Structure.pdf
+ - (Probably forgot some)
