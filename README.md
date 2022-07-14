@@ -35,13 +35,12 @@ Ressources I used to read this pile of shit
 #### Extended partition:
  - ❌ Read MBR extended partition
 
+![result_example](https://user-images.githubusercontent.com/17061996/179110745-35a54265-ed90-4fb0-bd94-65456be36dbd.png)
  
 ## Usage:
 Need a file named "file" representing a disk image with one primary fat32 partition and multiple extended fat32 partitions
 
 ![image](https://user-images.githubusercontent.com/17061996/178532228-cea01d02-24ca-40b8-9aae-7c467eaf07a1.png)
-
-![result_example](https://user-images.githubusercontent.com/17061996/179110745-35a54265-ed90-4fb0-bd94-65456be36dbd.png)
 
 ## Commands
 ```bash
