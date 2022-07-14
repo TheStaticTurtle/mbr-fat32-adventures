@@ -5,6 +5,8 @@ Need a file named "file" representing a disk image with one primary fat32 partit
 
 ![image](https://user-images.githubusercontent.com/17061996/178532228-cea01d02-24ca-40b8-9aae-7c467eaf07a1.png)
 
+![result_example](https://user-images.githubusercontent.com/17061996/179110745-35a54265-ed90-4fb0-bd94-65456be36dbd.png)
+
 ## Commands
 ```bash
 # Mount file to partitionned loop:
