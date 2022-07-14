@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+<title>stdin</title>
+<style type="text/css">
+html {
+  background-color: rgb(29,29,29);
+  color: rgb(221,221,221);
+}
+
+.reset       {color: rgb(221,221,221);}
+.bg-reset    {background-color: rgb(29,29,29);;}
+.inverted    {color: black;}
+.bg-inverted {background-color: white;}
+.dimgray     {color: dimgray;}
+.red         {color: rgb(187,0,0);}
+.green       {color: rgb(0,187,0);}
+.yellow      {color: rgb(187,187,0);}
+.blue        {color: rgb(0,0,187);}
+.purple      {color: rgb(187,0,187);}
+.cyan        {color: rgb(0,187,187);}
+.white       {color: rgb(187,187,187);}
+.bg-black    {background-color: rgb(0,0,0);}
+.bg-red      {background-color: rgb(187,0,0);}
+.bg-green    {background-color:  rgb(0,187,0);}
+.bg-yellow   {background-color: rgb(187,187,0);}
+.bg-blue     {background-color:  rgb(0,0,187);}
+.bg-purple   {background-color:rgb(187,0,187);}
+.bg-cyan     {background-color: rgb(0,187,187);}
+.bg-white    {background-color: white;}
+.underline   {text-decoration: underline;}
+.bold        {font-weight: bold;}
+.italic      {font-style: italic;}
+.blink       {text-decoration: blink;}
+.crossed-out {text-decoration: line-through;}
+.highlighted {filter: contrast(70%) brightness(190%);}
+</style>
+</head>
+<body>
+<pre>
+MBR struct size: 512
+MBR_partition struct size: 16
+FAT32 struct size: 1024
+FAT_boot_sector struct size: 512
+FAT_DOS20_bios_parameter_block struct size: 13
+FAT_DOS331_bios_parameter_block struct size: 25
+FAT_extended_bios_parameter_block struct size: 51
+FAT_information_sector struct size: 512
+FAT_directory_entry struct size: 32
+FAT_lfn_entry struct size: 32
+FAT_datetime struct size: 4
+
+Valid MBR Disk found, printing structure:
+	<span class="cyan ">timestamp</span>:
+		<span class="green ">original_physical_drive</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">seconds</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">minutes</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">hours</span> = <span class="yellow ">0 (0x00)</span>
+	<span class="cyan ">disk_signature</span>:
+		<span class="green ">signature</span> = <span class="yellow ">28 (0x0000001c)</span>
+		<span class="green ">disk_copy_protect</span> = <span class="yellow ">0 (0x0000)</span>
+	<span class="cyan ">part1</span>:
+		<span class="green ">status</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_head</span> = <span class="yellow ">32 (0x20)</span>
+		<span class="green ">first_sector_cylinder</span> = <span class="yellow ">33 (0x0021)</span>
+		<span class="green ">type</span> = <span class="purple ">FAT32 </span>
+		<span class="green ">last_sector_head</span> = <span class="yellow ">102 (0x66)</span>
+		<span class="green ">last_sector_cylinder</span> = <span class="yellow ">37 (0x0025)</span>
+		<span class="green ">LBA_first</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="green ">sector_count</span> = <span class="yellow ">0 (0x00000000)</span>
+	<span class="cyan ">part2</span>:
+		<span class="green ">status</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_head</span> = <span class="yellow ">102 (0x66)</span>
+		<span class="green ">first_sector_cylinder</span> = <span class="yellow ">38 (0x0026)</span>
+		<span class="green ">type</span> = <span class="purple ">EXTENDED </span>
+		<span class="green ">last_sector_head</span> = <span class="yellow ">63 (0x3f)</span>
+		<span class="green ">last_sector_cylinder</span> = <span class="yellow ">1 (0x0001)</span>
+		<span class="green ">LBA_first</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="green ">sector_count</span> = <span class="yellow ">64 (0x00000040)</span>
+	<span class="cyan ">part3</span>:
+		<span class="green ">status</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_head</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_cylinder</span> = <span class="yellow ">0 (0x0000)</span>
+		<span class="green ">type</span> = <span class="purple ">UNUSED </span>
+		<span class="green ">last_sector_head</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">last_sector_cylinder</span> = <span class="yellow ">0 (0x0000)</span>
+		<span class="green ">LBA_first</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="green ">sector_count</span> = <span class="yellow ">0 (0x00000000)</span>
+	<span class="cyan ">part4</span>:
+		<span class="green ">status</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_head</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">first_sector_cylinder</span> = <span class="yellow ">0 (0x0000)</span>
+		<span class="green ">type</span> = <span class="purple ">UNUSED </span>
+		<span class="green ">last_sector_head</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">last_sector_cylinder</span> = <span class="yellow ">0 (0x0000)</span>
+		<span class="green ">LBA_first</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="green ">sector_count</span> = <span class="yellow ">0 (0x00000000)</span>
+	<span class="green ">boot_signature</span> = <span class="yellow ">85 (0x0055)</span>
+
+Primary partion 1 is a valid FAT32 partition:
+	<span class="cyan ">boot_sector @ disk sector </span><span class="cyan ">2048
+</span>		<span class="green ">oem_name</span> = <span class="yellow ">&quot;mkfs.fat&quot;</span>
+		<span class="cyan ">DOS2.0 BPB</span>
+			<span class="green ">bytes_per_logical_sector</span> = <span class="yellow ">0 (0x0000)</span>
+			<span class="green ">logical_sectors_per_cluster</span> = <span class="yellow ">1 (0x01)</span>
+			<span class="green ">reserved_logical_sector_count</span> = <span class="yellow ">32 (0x0020)</span>
+			<span class="green ">file_allocation_table_count</span> = <span class="yellow ">2 (0x02)</span>
+			<span class="green ">max_root_entries</span> = <span class="yellow ">0 (0x0000)</span>
+			<span class="green ">logical_sector_count</span> = <span class="yellow ">251 (0x00fb)</span>
+			<span class="green ">media_descriptor</span> = <span class="yellow ">248 (0xf8)</span>
+			<span class="green ">logical_sector_per_file_allocation_table</span> = <span class="yellow ">0 (0x0000)</span>
+		<span class="cyan ">DOS3.31 BPB</span>
+			<span class="green ">physical_sectors_per_track</span> = <span class="yellow ">63 (0x003f)</span>
+			<span class="green ">number_of_heads</span> = <span class="yellow ">16 (0x0010)</span>
+			<span class="green ">hidden_sector_count</span> = <span class="yellow ">0 (0x00000000)</span>
+			<span class="green ">logical_sector_count</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="cyan ">FAT32 Extended BPB</span>
+			<span class="green ">logical_sector_per_file_allocation_table</span> = <span class="yellow ">158 (0x0000009e)</span>
+			<span class="green ">drive_description</span> = <span class="yellow ">0 (0x0000)</span>
+			<span class="green ">version</span> = <span class="yellow ">0 (0x0000)</span>
+			<span class="green ">information_sector_logical_sector_number</span> = <span class="yellow ">1 (0x0001)</span>
+			<span class="green ">first_boot_sector_copy_logical_sector_number</span> = <span class="yellow ">6 (0x0006)</span>
+			<span class="green ">physical_drive_number</span> = <span class="yellow ">128 (0x80)</span>
+			<span class="green ">fat16_fat12_reserved</span> = <span class="yellow ">0 (0x00)</span>
+			<span class="green ">extended_boot_signature</span> = <span class="yellow ">41 (0x29)</span>
+			<span class="green ">volume_id</span> = <span class="yellow ">209 (0x000000d1)</span>
+			<span class="green ">volume_label</span> = <span class="yellow ">&quot;NO NAME    FAT32   &quot;</span>
+			<span class="green ">file_system_type</span> = <span class="yellow ">&quot;FAT32   &quot;</span>
+		<span class="green ">physical_drive_number</span> = <span class="yellow ">0 (0x00)</span>
+		<span class="green ">signature</span> = <span class="yellow ">85 (0x0055)</span>
+	FAT32 partition, reading information sector
+	<span class="cyan ">information_sector @ disk sector </span><span class="cyan ">2049
+</span>		<span class="green ">signature1</span> = <span class="yellow ">&quot;RRaA&quot;</span>
+		<span class="green ">signature2</span> = <span class="yellow ">&quot;rrAa&quot;</span>
+		<span class="green ">last_free_data_cluster_count</span> = <span class="yellow ">155 (0x0000009b)</span>
+		<span class="green ">recently_allocated_data_cluster_count</span> = <span class="yellow ">13 (0x0000000d)</span>
+		<span class="green ">signature3</span> = <span class="yellow ">0 (0x00000000)</span>
+	Reading FAT tables
+	<span class="cyan ">file_allocation_table @ sector </span><span class="cyan ">2080
+</span>		<span class="green ">media_descriptor</span> = <span class="yellow ">248 (0xf8)</span>
+		<span class="green ">ones</span> = <span class="yellow ">255 (0xff)</span>
+		<span class="green ">ones</span> = <span class="yellow ">255 (0xff)</span>
+		<span class="green ">ones</span> = <span class="yellow ">15 (0x0f)</span>
+		<span class="green ">end_of_cluster</span> = <span class="yellow ">255 (0x000000ff)</span>
+		<span class="green ">entry_count</span> = <span class="yellow ">0 (0x00000000)</span>
+		<span class="green ">- end_cluster_chain </span>(<span class="yellow ">0x0ffffff8</span>) cluster no <span class="yellow ">2</span> (<span class="yellow ">0x00000002</span>) located at disk sector <span class="yellow ">2398</span> (<span class="yellow ">0x0000095e</span>)
+		<span class="green ">- end_cluster_chain </span>(<span class="yellow ">0x0fffffff</span>) cluster no <span class="yellow ">7</span> (<span class="yellow ">0x00000007</span>) located at disk sector <span class="yellow ">2403</span> (<span class="yellow ">0x00000963</span>)
+		<span class="green ">- end_cluster_chain </span>(<span class="yellow ">0x0fffffff</span>) cluster no <span class="yellow ">12</span> (<span class="yellow ">0x0000000c</span>) located at disk sector <span class="yellow ">2408</span> (<span class="yellow ">0x00000968</span>)
+		<span class="green ">- end_cluster_chain </span>(<span class="yellow ">0x0fffffff</span>) cluster no <span class="yellow ">13</span> (<span class="yellow ">0x0000000d</span>) located at disk sector <span class="yellow ">2409</span> (<span class="yellow ">0x00000969</span>)
+		Reading entries in root dir disk sector 2396
+		<span class="cyan ">dir_entry @ sector </span><span class="cyan ">2396</span><span class="cyan "> offset </span><span class="cyan ">0
+</span>			<span class="cyan ">lfn_entries</span>:
+				<span class="green ">- sequence_number</span> = <span class="yellow ">229 (0xe5)</span> <span class="bg-red ">(deleted entry)</span> <span class="purple ">(last)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;.hell&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;o.swp&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;o.swp&quot;</span><span class="green "> checksum</span> = <span class="yellow ">169 (0xa9)</span>
+			<span class="green ">long_file_name</span> = <span class="yellow ">&quot;.hello.swp&quot;</span>
+			<span class="green ">short_name</span> = <span class="yellow ">&quot;�ELLO~1 SWP &quot;</span><span class="green "> | short_ext</span> = <span class="yellow ">&quot;SWP &quot;</span><span class="green "> | first_byte</span> = <span class="yellow ">229 (0xe5)</span>
+			<span class="green ">attributes</span> = <span class="purple ">archive </span>
+			<span class="green ">create_date</span> = <span class="yellow ">22:38:50 2022/07/12</span><span class="green "> | fine</span> = <span class="yellow ">44ms (0x2c)</span>
+			<span class="green ">last_modified_date</span> = <span class="yellow ">22:38:50 2022/07/12</span>
+			<span class="green ">last_access_date</span> = <span class="yellow ">2022/07/12</span>
+			<span class="green ">cluster_number</span> = <span class="yellow ">5 (0x00000005)</span>
+			<span class="green ">file_size_bytes</span> = <span class="yellow ">0bytes (0x00000000)</span>
+		<span class="cyan ">dir_entry @ sector </span><span class="cyan ">2396</span><span class="cyan "> offset </span><span class="cyan ">64
+</span>			<span class="cyan ">lfn_entries</span>:
+				<span class="green ">- sequence_number</span> = <span class="yellow ">65 (0x41)</span> <span class="purple ">(last)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;hello&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;&quot;</span><span class="green "> checksum</span> = <span class="yellow ">20 (0x14)</span>
+			<span class="green ">long_file_name</span> = <span class="yellow ">&quot;hello&quot;</span>
+			<span class="green ">short_name</span> = <span class="yellow ">&quot;HELLO       &quot;</span><span class="green "> | short_ext</span> = <span class="yellow ">&quot;    &quot;</span><span class="green "> | first_byte</span> = <span class="yellow ">72 (0x48)</span>
+			<span class="green ">attributes</span> = <span class="purple ">archive </span>
+			<span class="green ">create_date</span> = <span class="yellow ">22:38:56 2022/07/12</span><span class="green "> | fine</span> = <span class="yellow ">178ms (0xb2)</span>
+			<span class="green ">last_modified_date</span> = <span class="yellow ">22:38:56 2022/07/12</span>
+			<span class="green ">last_access_date</span> = <span class="yellow ">2022/07/12</span>
+			<span class="green ">cluster_number</span> = <span class="yellow ">7 (0x00000007)</span>
+			<span class="green ">file_size_bytes</span> = <span class="yellow ">10bytes (0x0000000a)</span>
+		<span class="cyan ">dir_entry @ sector </span><span class="cyan ">2396</span><span class="cyan "> offset </span><span class="cyan ">128
+</span>			<span class="cyan ">lfn_entries</span>:
+				<span class="green ">- sequence_number</span> = <span class="yellow ">67 (0x43)</span> <span class="purple ">(last)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;lol&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;￿￿&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;￿￿&quot;</span><span class="green "> checksum</span> = <span class="yellow ">132 (0x84)</span>
+				<span class="green ">- sequence_number</span> = <span class="yellow ">2 (0x02)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;_a_lo�&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;ng_nam&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;e__nam&quot;</span><span class="green "> checksum</span> = <span class="yellow ">132 (0x84)</span>
+				<span class="green ">- sequence_number</span> = <span class="yellow ">1 (0x01)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;test_m&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;dir_wi&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;thr_wi&quot;</span><span class="green "> checksum</span> = <span class="yellow ">132 (0x84)</span>
+			<span class="green ">long_file_name</span> = <span class="yellow ">&quot;test_dir_with_a_long_name_lol&quot;</span>
+			<span class="green ">short_name</span> = <span class="yellow ">&quot;TEST_D~1   &quot;</span><span class="green "> | short_ext</span> = <span class="yellow ">&quot;   &quot;</span><span class="green "> | first_byte</span> = <span class="yellow ">84 (0x54)</span>
+			<span class="green ">attributes</span> = <span class="purple ">subdirectory </span>
+			<span class="green ">create_date</span> = <span class="yellow ">19:10:30 2022/07/14</span><span class="green "> | fine</span> = <span class="yellow ">200ms (0xc8)</span>
+			<span class="green ">last_modified_date</span> = <span class="yellow ">19:10:30 2022/07/14</span>
+			<span class="green ">last_access_date</span> = <span class="yellow ">2022/07/14</span>
+			<span class="green ">cluster_number</span> = <span class="yellow ">13 (0x0000000d)</span>
+			<span class="green ">file_size_bytes</span> = <span class="yellow ">0bytes (0x00000000)</span>
+		<span class="cyan ">dir_entry @ sector </span><span class="cyan ">2396</span><span class="cyan "> offset </span><span class="cyan ">256
+</span>			<span class="cyan ">lfn_entries</span>:
+				<span class="green ">- sequence_number</span> = <span class="yellow ">66 (0x42)</span> <span class="purple ">(last)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;ery_l&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;ong_na&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;meg_na&quot;</span><span class="green "> checksum</span> = <span class="yellow ">139 (0x8b)</span>
+				<span class="green ">- sequence_number</span> = <span class="yellow ">1 (0x01)</span><span class="green "> name_characters1</span> = <span class="yellow ">&quot;file_a&quot;</span><span class="green "> name_characters2</span> = <span class="yellow ">&quot;with_a&quot;</span><span class="green "> name_characters3</span> = <span class="yellow ">&quot;_vth_a&quot;</span><span class="green "> checksum</span> = <span class="yellow ">139 (0x8b)</span>
+			<span class="green ">long_file_name</span> = <span class="yellow ">&quot;file_with_a_very_long_name&quot;</span>
+			<span class="green ">short_name</span> = <span class="yellow ">&quot;FILE_W~1    &quot;</span><span class="green "> | short_ext</span> = <span class="yellow ">&quot;    &quot;</span><span class="green "> | first_byte</span> = <span class="yellow ">70 (0x46)</span>
+			<span class="green ">attributes</span> = <span class="purple ">archive </span>
+			<span class="green ">create_date</span> = <span class="yellow ">15:54:02 2022/07/14</span><span class="green "> | fine</span> = <span class="yellow ">174ms (0xae)</span>
+			<span class="green ">last_modified_date</span> = <span class="yellow ">15:54:02 2022/07/14</span>
+			<span class="green ">last_access_date</span> = <span class="yellow ">2022/07/14</span>
+			<span class="green ">cluster_number</span> = <span class="yellow ">12 (0x0000000c)</span>
+			<span class="green ">file_size_bytes</span> = <span class="yellow ">4bytes (0x00000004)</span>
+		<span class="cyan ">dir_entry @ sector </span><span class="cyan ">2396</span><span class="cyan "> offset </span><span class="cyan ">352
+</span>			<span class="green ">short_name</span> = <span class="yellow ">&quot;&quot;</span><span class="green "> | short_ext</span> = <span class="yellow ">&quot;&quot;</span><span class="green "> | first_byte</span> = <span class="yellow ">0 (0x00)</span>
+			<span class="green ">attributes</span> = <span class="purple "></span>
+			<span class="green ">create_date</span> = <span class="yellow ">00:00:00 1980/00/00</span><span class="green "> | fine</span> = <span class="yellow ">0ms (0x00)</span>
+			<span class="green ">last_modified_date</span> = <span class="yellow ">00:00:00 1980/00/00</span>
+			<span class="green ">last_access_date</span> = <span class="yellow ">1980/00/00</span>
+			<span class="green ">cluster_number</span> = <span class="yellow ">0 (0x00000000)</span>
+			<span class="green ">file_size_bytes</span> = <span class="yellow ">0bytes (0x00000000)</span>
+Primary partion 2 is invalid or empty:
+Primary partion 3 is invalid or empty:
+Primary partion 4 is invalid or empty:
+</pre>
+</body>
+</html>

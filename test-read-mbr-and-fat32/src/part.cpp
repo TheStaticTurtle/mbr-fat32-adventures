@@ -6,6 +6,7 @@
 #include "part.h"
 #include "mbr.h"
 #include "fat.h"
+#include "fat16.h"
 
 uint32_t get_primary_part_start_bytes(MBR_partition mbr_part) {
     return mbr_part.LBA_first * 512;

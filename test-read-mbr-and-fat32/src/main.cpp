@@ -5,6 +5,8 @@
 
 #include "mbr.h"
 #include "fat.h"
+#include "fat16.h"
+#include "fat32.h"
 #include "part.h"
 
 int error(const char* error, int code) {
@@ -33,10 +35,10 @@ int main(int argc, char** argv) {
     if(fp == NULL) return error("Failed to open file", -1);
 
     if(read_mbr(&disk, fp) != MBR_ERROR_NO) return error("Failed to read disk MBR", -2);
-    printf("\n\nValid MBR Disk found, printing structure:\n");
+    printf("\nValid MBR Disk found, printing structure:\n");
     print_mbr(disk);
     
-    printf("\n\n");
+    printf("\n");
 
     MBR_partition primary_parts[4] = {disk.part1, disk.part2, disk.part3, disk.part4};
 
@@ -53,7 +55,7 @@ int main(int argc, char** argv) {
                 if(fat_type == FAT_FATtype::FAT_TYPE_FAT16) {
                     FAT_PART primary_part;
                     read_fat16_part(&primary_part, fp, partition_start);
-                    print_fat16_part(primary_part);
+                    // print_fat16_part(primary_part);
                 } else if(fat_type == FAT_FATtype::FAT_TYPE_FAT32) {
                     FAT32_PART primary_part;
                     read_fat32_part(&primary_part, fp, partition_start);

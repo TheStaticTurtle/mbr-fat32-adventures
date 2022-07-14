@@ -1,4 +1,6 @@
 #include "mbr.h"
+#include "pretty_print.h"
+#include "ansi.h"
 
 #pragma region Pretty-Print
 const char* MBR_partition_type_to_string(MBR_partition_type t) {
@@ -22,47 +24,57 @@ const char* MBR_partition_type_to_string(MBR_partition_type t) {
     return strings[t];
 }
 void print_mbr_partition(MBR_partition partition) {
-    printf("\t\tstatus = 0x%02x\n", partition.status);
-    printf("\t\tfirst_sector_head = %d (0x%02x)\n" , partition.first_sector_head, partition.first_sector_head);
-    printf("\t\tfirst_sector_cylinder = %d (0x%02x)\n" , partition.first_sector_cylinder, partition.first_sector_cylinder);
+    pp_increase_global_indent();
+    pp_var("status", partition.status, 1, "", "\n");
+    pp_var("first_sector_head", partition.first_sector_head, 1, "", "\n");
+    pp_var("first_sector_cylinder", partition.first_sector_cylinder, 1, "", "\n");
+
     const char* type1 = MBR_partition_type_to_string(partition.type);
+    pp_enum_start("type", 1, "");
     if(type1==NULL) {
-        printf("\t\ttype = NOTFOUND:0x%02x\n", partition.type);
+        printf(REDB " NOT FOUND  " COLOR_RESET " %" PRIu8 " (0x%02" PRIx8 ")", (uint8_t)partition.type, (uint8_t)partition.type);
     } else {
-        printf("\t\ttype = %s\n", type1);
+        pp_enum_value(type1);
     }
-    printf("\t\tlast_sector_head = %d (0x%02x)\n" , partition.last_sector_head, partition.last_sector_head);
-    printf("\t\tlast_sector_cylinder = %d (0x%02x)\n" , partition.last_sector_cylinder, partition.last_sector_cylinder);
-    printf("\t\tlba_first = %" PRIu32 " (0x%08" PRIx32 ")\n", partition.LBA_first, partition.LBA_first);
-    printf("\t\tsector_count = %" PRIu32 " (0x%08" PRIx32 ")\n", partition.sector_count, partition.sector_count);
+    pp_enum_end("\n");
+
+    pp_var("last_sector_head", partition.last_sector_head, 1, "", "\n");
+    pp_var("last_sector_cylinder", partition.last_sector_cylinder, 1, "", "\n");
+    pp_var("LBA_first", partition.LBA_first, 1, "", "\n");
+    pp_var("sector_count", partition.sector_count, 1, "", "\n");
+
+    pp_decrease_global_indent();
 }
 void print_mbr_disk_signature(MBR_disk_signature disk_signature) {
-    printf("\t\tsignature = %" PRIu32 " (0x%08" PRIx32 ")\n", disk_signature.signature, disk_signature.signature);
-    printf("\t\tdisk_copy_protect = %" PRIu32 " (0x%08" PRIx32 ")\n", disk_signature.disk_copy_protect, disk_signature.disk_copy_protect);
+    pp_title("disk_signature", 1, "", ":\n");
+    pp_increase_global_indent();
+    pp_var("signature", disk_signature.signature, 1, "", "\n");
+    pp_var("disk_copy_protect", disk_signature.disk_copy_protect, 1, "", "\n");
+    pp_decrease_global_indent();
 }
 void print_mbr_timestamp(MBR_timestamp timestamp) {
-    printf("\t\toriginal_physical_drive = 0x%02x\n", timestamp.original_physical_drive);
-    printf("\t\tseconds = %d\n" , timestamp.seconds);
-    printf("\t\tminutes = %d\n" , timestamp.minutes);
-    printf("\t\thours = %d\n" , timestamp.hours);
+    pp_title("timestamp", 1, "", ":\n");
+    pp_increase_global_indent();
+    pp_var("original_physical_drive", timestamp.original_physical_drive, 1, "", "\n");
+    pp_var("seconds", timestamp.seconds, 1, "", "\n");
+    pp_var("minutes", timestamp.minutes, 1, "", "\n");
+    pp_var("hours", timestamp.hours, 1, "", "\n");
+    pp_decrease_global_indent();
 }
 void print_mbr(MBR disk) {
-    printf("\ttimestamp:\n");
     print_mbr_timestamp(disk.timestamp);
-
-    printf("\tdisk_signature:\n");
     print_mbr_disk_signature(disk.disk_signature);
 
-    printf("\tpart1:\n");
+    pp_title("part1", 1, "", ":\n");
     print_mbr_partition(disk.part1);
-    printf("\tpart2:\n");
+    pp_title("part2", 1, "", ":\n");
     print_mbr_partition(disk.part2);
-    printf("\tpart3:\n");
+    pp_title("part3", 1, "", ":\n");
     print_mbr_partition(disk.part3);
-    printf("\tpart4:\n");
+    pp_title("part4", 1, "", ":\n");
     print_mbr_partition(disk.part4);
 
-    printf("\tboot_signature = 0x%04" PRIx16 "\n", disk.boot_signature);
+    pp_var("boot_signature", disk.boot_signature, 1, "", "\n");
 }
 #pragma endregion
 
